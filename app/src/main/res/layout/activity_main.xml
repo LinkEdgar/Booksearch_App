@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp"
+    android:background="@color/lightBackground"
+    android:padding="6dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.enduser.library.MainActivity">
+    <SearchView
+        android:background="@color/white"
+        android:id="@+id/searchview"
+        android:backgroundTint="@color/white"
+        tools:queryHint="Search for your favorite book"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </SearchView>
+
+    <TextView
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:text="Suggestions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <HorizontalScrollView
+        android:paddingBottom="8dp"
+        android:minHeight="120dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/categories"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/suggestion_1"
+                tools:src="@mipmap/ic_launcher"
+                android:layout_width="160dp"
+                android:layout_height="100dp" />
+                <TextView
+                    android:layout_marginLeft="50dp"
+                    android:layout_weight="1"
+                    android:text="East of Eden"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/suggestion_2"
+                    android:src="@mipmap/ic_launcher"
+                    android:layout_width="160dp"
+                    android:layout_height="100dp" />
+                <TextView
+                    android:layout_marginLeft="40dp"
+                    android:layout_weight="1"
+                    android:text="World War Z"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/suggestion_3"
+                    android:src="@mipmap/ic_launcher"
+                    android:layout_width="160dp"
+                    android:layout_height="100dp" />
+                <TextView
+                    android:layout_marginLeft="30dp"
+                    android:layout_weight="1"
+                    android:text="Tuesdays with Morrie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:text="Best Sellers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <HorizontalScrollView
+        android:minHeight="120dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/best_sellers"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/best_1"
+                    android:layout_width="160dp"
+                    android:layout_height="100dp" />
+                <TextView
+                    android:layout_marginLeft="50dp"
+                    android:layout_weight="1"
+                    android:text="Harry Potter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/best_2"
+                    android:src="@mipmap/ic_launcher"
+                    android:layout_width="160dp"
+                    android:layout_height="100dp" />
+                <TextView
+                    android:layout_marginLeft="50dp"
+                    android:layout_weight="1"
+                    android:text="Bible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/best_3"
+                    android:layout_width="160dp"
+                    android:layout_height="100dp" />
+                <TextView
+                    android:layout_marginLeft="50dp"
+                    android:layout_weight="1"
+                    android:text="Twilight Saga"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="6dp"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+    <ImageView
+        android:id="@+id/thumbnail"
+        tools:src="@mipmap/ic_launcher"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+    <RelativeLayout
+        android:layout_marginLeft="4dp"
+        android:layout_weight="3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:id="@+id/titleofBook"
+            tools:text="East of Eden"
+            android:maxWidth="120dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="12sp"
+            android:textColor="@color/lightTextBackground"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/by"
+            android:layout_toRightOf="@+id/titleofBook"
+            android:text="by:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textSize="12sp"
+            android:textColor="@color/lightTextBackground"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/by"
+            android:id="@+id/author"
+            tools:text="John Steinbeck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_below="@+id/titleofBook"
+                android:id="@+id/description"
+                tools:text="It was the best of times it was the worst of times but sadly no one gave a penny. I have to watch what I say as the republican party...."
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+</LinearLayout>
